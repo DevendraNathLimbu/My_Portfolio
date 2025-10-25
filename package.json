@@ -33,6 +33,6 @@
     "vite": "^7.1.7",
     "vite-plugin-static-copy": "^3.1.4"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://my-portfolio-8kd5.onrender.com/",
   "homepage": "."
 }
