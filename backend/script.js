@@ -14,8 +14,11 @@ const corsOptions = {
   optionsSuccessStatus: 200,
   credentials: true
 };
+const __dirname = path.resolve();
 
 app.use(cors(corsOptions));
+
+app.use(express.static(path.join(__dirname, "../dist")));
 
 const mongoose = require('mongoose');
 const Msg = require('./model/model.js');
@@ -26,6 +29,10 @@ app.use(express.json());
 mongoose.connect(mongoURL)
   .then(() => console.log('✅ Connected to MongoDB via mongoose'))
   .catch(err => console.error('❌ MongoDB connection error (mongoose):', err));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
+});
 
 app.get('/api/messages', async (req, res) => {
     try {
