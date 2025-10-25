@@ -37,7 +37,7 @@ export default function Navbar() {
   };
 
     return (<>
-     <nav className="left-1/2 -translate-x-1/2 w-[85%] font-['codeFont'] flex items-center justify-between col h-18 px-5 border-[#aabbcc] border-1 rounded-2xl">
+     <nav className="left-1/2 -translate-x-1/2 w-[85%] bg-[#FFFFFF22] backdrop-blur-[20px] font-['codeFont'] flex items-center justify-between col h-18 px-5 border-[#aabbcc] border-1 rounded-2xl">
               <Link to="/" className="logo relative h-16 w-16 block border-0 rounded-full">
                 <div className="bg-[url('./assets/images/logo.png')] bg-cover bg-center h-[100%] w-[100%]"> </div>
                  </Link>

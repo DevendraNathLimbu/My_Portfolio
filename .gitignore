@@ -13,7 +13,6 @@ package-lock.json
 README.md
 vite.config.js
 eslint.config.js
-.public
 dist
 dist-ssr
 *.local

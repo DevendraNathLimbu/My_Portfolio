@@ -12,7 +12,6 @@ import { Routes, Route } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-
 export default function Home() {
 const glowRef = useRef(null);
 const ballRef = useRef(null);

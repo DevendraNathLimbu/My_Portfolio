@@ -42,7 +42,7 @@
 
 @font-face{
   font-family: 'codeFont';
-  src: url('./src/assets/fonts/braven/BravenRegular.ttf') format('truetype');
+  src: url('./assets/fonts/braven/BravenRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -62,7 +62,7 @@ body{
 }
 
 main{
-  background-image: url('./src/assets/first_background.jpg');
+  background-image: url('./assets/first_background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,15 +76,9 @@ nav{
   position: fixed;
   top: 10px;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.132);
-  backdrop-filter: blur(20px);           /* main effect */
-  -webkit-backdrop-filter: blur(20px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .footer{
-  background: rgba(255, 255, 255, 0.128); /* semi-transparent */
-  backdrop-filter: blur(20px);           /* main effect */
-  -webkit-backdrop-filter: blur(20px);
   padding: 10px !important;
 }
 .footer p{
@@ -184,15 +178,9 @@ nav .nav-links li Link:hover{
 
 /* Contact Page */
 .contact_section{
- background: rgba(0, 0, 0, 0.144); 
-  backdrop-filter: blur(20px);          
-  -webkit-backdrop-filter: blur(20px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .message_form {
-  background: rgba(0, 0, 0, 0.132); /* semi-transparent */
-  backdrop-filter: blur(20px);           /* main effect */
-  -webkit-backdrop-filter: blur(20px);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 /* Mern Hover Effects */

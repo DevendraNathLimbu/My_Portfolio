@@ -1,9 +1,11 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const cors = require('cors');
+import cors from 'cors';
 const port = 5000;
-const path = require('path');
-const dotenv = require('dotenv');
+import path from 'path';
+import dotenv from 'dotenv';
+import fs from "fs";
+import { fileURLToPath } from "url";
 dotenv.config();
 // Use mongoose to connect to MongoDB. Fall back to local MongoDB if URL not provided.
 const mongoURL = process.env.URL;
@@ -14,14 +16,22 @@ const corsOptions = {
   optionsSuccessStatus: 200,
   credentials: true
 };
-const __dirname = path.resolve();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(cors(corsOptions));
 
-app.use(express.static(path.join(__dirname, "./dist")));
+const distPath = path.join(__dirname, "../dist");
 
-const mongoose = require('mongoose');
-const Msg = require('./model/model.js');
+if (!fs.existsSync(distPath)) {
+  console.error("ERROR: dist folder not found at", distPath);
+  process.exit(1);
+}
+
+app.use(express.static(distPath));
+
+import mongoose from 'mongoose';
+import Msg from './model/model.js';
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -30,8 +40,13 @@ mongoose.connect(mongoURL)
   .then(() => console.log('✅ Connected to MongoDB via mongoose'))
   .catch(err => console.error('❌ MongoDB connection error (mongoose):', err));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./dist/index.html"));
+app.get( (req, res) => {
+  const indexPath = path.join(distPath, "index.html");
+  if (!fs.existsSync(indexPath)) {
+    console.error("ERROR: index.html not found in dist folder");
+    return res.status(500).send("index.html not found");
+  }
+  res.sendFile(indexPath);
 });
 
 app.get('/api/messages', async (req, res) => {

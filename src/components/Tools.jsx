@@ -11,7 +11,7 @@ export default function Tools() {
 
         <div className="tools w-full flex md:flex-row flex-col items-center justify-center md:justify-around gap-2 md:gap-4 mt-4 flex-nowrap">
           <div className="min-w-[20vw] flex flex-col items-center justify-center gap-2">
-             <div className="tool bg-[url('./src/assets/icons/Git.png')] bg-cover bg-center w-15 h-15 md:w-20 md:h-20"></div>
+             <div className="tool bg-[url('./assets/icons/Git.png')] bg-cover bg-center w-15 h-15 md:w-20 md:h-20"></div>
              <h3 className="text-3xl font-['headerFont'] md:text-4xl text-white">Git</h3>
           </div>
           <div><CgArrowLongRightC className="text-6xl md:block hidden"/></div>
@@ -25,21 +25,21 @@ export default function Tools() {
             </div>
 
          <div className="tools w-full flex items-baseline md:items-center justify-center md:justify-evenly gap-4 mt-10 flex-wrap">
-            <div className="h-50 w-90 md:h-60 md:w-120 rounded-xl bg-[url('./src/assets/icons/gh.png')] bg-cover bg-center shadow-lg shadow-gray-400/40  hover:scale-102 transition-all duration-300"></div>
+            <div className="h-50 w-90 md:h-60 md:w-120 rounded-xl bg-[url('./assets/icons/gh.png')] bg-cover bg-center shadow-lg shadow-gray-400/40  hover:scale-102 transition-all duration-300"></div>
             <div><CgArrowLongLeftC className="text-6xl md:block hidden"/></div>
             <div className="min-w-[20vw] order-[-1] md:order-0 flex flex-col items-center justify-center gap-2">
-                 <div className="tool bg-[url('./src/assets/icons/GitHub.png')] bg-cover bg-center h-15 w-15 md:w-20 md:h-20"></div>
+                 <div className="tool bg-[url('./assets/icons/GitHub.png')] bg-cover bg-center h-15 w-15 md:w-20 md:h-20"></div>
                     <h3 className="text-3xl font-['headerFont'] md:text-4xl text-white">GitHub</h3>
          </div>
             </div>
 
             <div className="tools w-full flex items-center justify-center md:justify-evenly gap-4 mt-10 flex-wrap">
           <div className="min-w-[20vw] flex flex-col items-center justify-center gap-2">
-            <div className="tool bg-[url('./src/assets/icons/Postman.png')] bg-cover bg-center h-15 w-15 md:w-20 md:h-20"></div>
+            <div className="tool bg-[url('./assets/icons/Postman.png')] bg-cover bg-center h-15 w-15 md:w-20 md:h-20"></div>
             <h3 className="text-3xl font-['headerFont'] md:text-4xl text-white">Postman</h3>
           </div>
           <div><CgArrowLongRightC className="text-6xl md:block hidden"/></div>
-           <div className="h-50 w-90 md:h-60 md:w-120 rounded-xl bg-[url('./src/assets/icons/pm.png')] bg-cover bg-center shadow-lg shadow-gray-400/40  hover:scale-102 transition-all duration-300"></div>
+           <div className="h-50 w-90 md:h-60 md:w-120 rounded-xl bg-[url('./assets/icons/pm.png')] bg-cover bg-center shadow-lg shadow-gray-400/40  hover:scale-102 transition-all duration-300"></div>
             </div>
         </div>
         </> 

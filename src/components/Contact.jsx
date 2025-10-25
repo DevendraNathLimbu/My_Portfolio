@@ -23,7 +23,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("http://localhost:8080/api/messages", formData);
+      const response = await axios.post("http://localhost:5000/api/messages", formData);
       console.log("Response from server:", response);
       setStatus(response.data.message);
       setFormData({name: "", message: ""});
@@ -43,7 +43,7 @@ export default function Contact() {
             <div className="w-full mt-10 grid gap-0 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 rounded-xl overflow-hidden">
 
                {/* This is a section for my contact details */}
-                <section className="contact_section p-5 font-['codeFont'] md:border-r-2 border-gray-800">
+                <section className="contact_section bg-[#00000025] backdrop-blur-[20px] p-5 font-['codeFont'] md:border-r-2 border-gray-800">
                     <h2 className="text-white text-2xl md:text-3xl font-semibold text-center mb-5">Contact Details</h2>
                     <ul className="w-full text-xl font-semibold flex flex-col gap-4 mt-3">
                         <li><Link to="/contact" className="flex items-center text-[#eeefff] whitespace-break-spaces"><FaLinkedin className="text-4xl text-blue-600" /> Make a Connection</Link></li>
@@ -55,7 +55,7 @@ export default function Contact() {
                 </section>
 
                 {/* This is a section for my message form */}
-                <section className="message_form p-5 font-['codeFont']">
+                <section className="message_form bg-[#00000022] backdrop-blur-[20px] p-5 font-['codeFont']">
                     <h2 className="w-full text-center text-2xl text-white md:text-3xl font-semibold">Wanna Send Me a Message !</h2>
                     <h5 className="w-full text-center text-white text-xl font-semibold">Here, you go <FaArrowDown className="inline-block" /></h5>
 

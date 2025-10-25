@@ -16,31 +16,31 @@ export default function Skills() {
             <h5 className="md:text-xl text-white font-semibold">CSS</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/js.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/js.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">JavaScript</h5>
         </div>
          <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/tailwindcss.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/tailwindcss.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">TailwindCSS</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/react.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/react.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">React</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/node.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/node.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">Node.js</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/Express.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/Express.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">Express</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/mongodb.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/mongodb.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MongoDB</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/MySQL.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/MySQL.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MySQL</h5>
         </div>
     </div>
@@ -56,31 +56,31 @@ export default function Skills() {
             <h5 className="md:text-xl text-white font-semibold">CSS</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/js.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/js.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">JavaScript</h5>
         </div>
          <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/tailwindcss.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/tailwindcss.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">TailwindCSS</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/react.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/react.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">React</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/node.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/node.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">Node.js</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/Express.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/Express.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">Express</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/mongodb.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/mongodb.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MongoDB</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./src/assets/icons/MySQL.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/MySQL.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MySQL</h5>
         </div>
     </div>

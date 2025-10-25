@@ -5,7 +5,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 export default function Footer() {
     return (
         <>
-        <footer className="footer flex flex-wrap gap-2 w-full text-xl py-5 mask-t-from-98%">
+        <footer className="footer bg-[#FFFFFF21] backdrop-blur-[20px] flex flex-wrap gap-2 w-full text-xl py-5 mask-t-from-98%">
             <div className="w-full flex items-center text-white justify-center gap-5">
             <a href="https://github.com/DevendraNathLimbu" target="_blank" rel="noopener noreferrer">
                 <FaGithubSquare className="text-3xl" />
