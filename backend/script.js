@@ -21,7 +21,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(cors(corsOptions));
 
-const distPath = path.join(__dirname, "dist");
+const distPath = path.join(__dirname, "../dist");
 
 if (!fs.existsSync(distPath)) {
   console.error("ERROR: dist folder not found at", distPath);

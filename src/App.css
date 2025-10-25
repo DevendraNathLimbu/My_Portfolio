@@ -57,7 +57,7 @@ body{
   box-sizing: border-box;
   font-family: 'normalFont', sans-serif;
   scroll-behavior: smooth;
-  cursor: url('./src/assets/cursor.png'), auto;
+  cursor: url('./assets/cursor.png'), auto;
   overflow-x: hidden;
 }
 
