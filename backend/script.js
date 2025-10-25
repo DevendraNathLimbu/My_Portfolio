@@ -18,7 +18,7 @@ const __dirname = path.resolve();
 
 app.use(cors(corsOptions));
 
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "dist")));
 
 const mongoose = require('mongoose');
 const Msg = require('./model/model.js');
@@ -31,7 +31,7 @@ mongoose.connect(mongoURL)
   .catch(err => console.error('❌ MongoDB connection error (mongoose):', err));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+  res.sendFile(path.join(__dirname, "dist/index.html"));
 });
 
 app.get('/api/messages', async (req, res) => {
