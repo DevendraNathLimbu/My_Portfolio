@@ -1,3 +1,4 @@
+import React from "react";
 export default function Skills() {
     return (<>
     {/* This is a section for my skills */}

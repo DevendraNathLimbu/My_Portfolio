@@ -1,3 +1,4 @@
+import React from "react";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaReact } from "react-icons/fa";

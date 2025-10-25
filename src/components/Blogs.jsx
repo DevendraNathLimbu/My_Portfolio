@@ -1,3 +1,4 @@
+import React from "react";
 import { MdOutlineConstruction } from "react-icons/md";
 
 export default function Blogs(){

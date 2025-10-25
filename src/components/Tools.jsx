@@ -1,3 +1,4 @@
+import React from "react";
 import { CgArrowLongRightC } from "react-icons/cg";
 import { CgArrowLongLeftC } from "react-icons/cg";
 
