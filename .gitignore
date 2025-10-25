@@ -29,12 +29,3 @@ eslint.config.js
 # *.njsproj
 # *.sln
 # *.sw?
-
-.package-lock.json
-.package.json
-.README.md
-.env
-.vite.config.js
-.eslint.config.js
-.node_modules
-.public
