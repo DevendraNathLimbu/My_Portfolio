@@ -63,10 +63,6 @@ app.post('/api/messages', (req, res) => {
         });
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
 app.listen(port,"0.0.0.0", () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
