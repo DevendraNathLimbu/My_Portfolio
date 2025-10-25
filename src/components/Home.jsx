@@ -58,7 +58,7 @@ const ballRef = useRef(null);
         style={{ transform: "translate(-50%, -50%)" }}
       ></div>
 
-        <div className="relative container min-h-[100vh] mx-1 md:mx-auto py-5 md:px-0 px-5">
+        <div className="relative w-[84vw] container min-h-[100vh] mx-1 md:mx-auto py-5 md:px-0 px-5">
               <Navbar/>
               <ScrollToTop />
             <Routes>

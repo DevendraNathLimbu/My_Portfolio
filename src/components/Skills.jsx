@@ -37,7 +37,7 @@ export default function Skills() {
             <h5 className="md:text-xl text-white font-semibold">Express</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/mongodb.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/MongoDB.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MongoDB</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
@@ -77,7 +77,7 @@ export default function Skills() {
             <h5 className="md:text-xl text-white font-semibold">Express</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
-            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/mongodb.png')] bg-cover bg-center"></div>
+            <div className="box h-[50px] w-[50px] md:h-[70px] md:w-[70px] bg-[url('./assets/icons/MongoDB.png')] bg-cover bg-center"></div>
             <h5 className="md:text-xl text-white font-semibold">MongoDB</h5>
         </div>
         <div className="container h-auto w-auto flex flex-col items-center justify-center gap-2">
