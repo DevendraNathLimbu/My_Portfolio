@@ -1,0 +1,211 @@
+@import "tailwindcss";
+@plugin "daisyui";
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+ 
+ .name{
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
+
+ @theme{
+  --shadow-md: 2px 3px 60px rgba(255, 255, 255, 0.5);
+  --shadow-lg: 2px 3px 80px rgba(20, 20, 20, 0.5);
+ }
+
+@font-face{
+  font-family: 'headerFont';
+  src: url('./assets/fonts/Butler/Butler_Medium.otf') format('truetype');
+  font-weight: 200 700;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'bodyFont';
+  src: url('./assets/fonts/moving/Moving.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'normalFont';
+  src: url('./assets/fonts/normal 1/JosefinSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'codeFont';
+  src: url('./src/assets/fonts/braven/BravenRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  width: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'normalFont', sans-serif;
+  scroll-behavior: smooth;
+  cursor: url('./src/assets/cursor.png'), auto;
+  overflow-x: hidden;
+}
+
+main{
+  background-image: url('./src/assets/first_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  /* reserve space for a fixed navbar so it doesn't cover content */
+  padding-top: 4.5rem; /* adjust if your nav is taller */
+}
+
+/* Make navbar fixed so sticky-like behaviour works even when ancestors have overflow set */
+nav{
+  position: fixed;
+  top: 10px;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.132);
+  backdrop-filter: blur(20px);           /* main effect */
+  -webkit-backdrop-filter: blur(20px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.footer{
+  background: rgba(255, 255, 255, 0.128); /* semi-transparent */
+  backdrop-filter: blur(20px);           /* main effect */
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px !important;
+}
+.footer p{
+  font-family: "codeFont";
+  color: rgba(255, 255, 255, 0.749);
+}
+
+nav .nav-links li Link{
+  font-family: "codeFont";
+  color: #ffffffd6;
+}
+
+nav .nav-links li Link:hover{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* For Skills Carousel */
+.carousel{
+  position: relative;
+  width: 72vw;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  margin-top: 2.5pc;
+  gap: 0pc;
+  padding: 10px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .group {
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  padding-left: 4pc;
+  /* overflow: hidden; */
+  animation: slide 15s linear infinite;
+}
+
+.carousel .container {
+  width: max-content;
+  transition: transform 0.3s ease;
+}
+
+.carousel .container .box {
+   display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  filter: grayscale(80);
+}
+
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+.carousel .container:hover{
+  transform: scale(1.05);
+}
+.carousel .container .box:hover {
+  filter: grayscale(0);
+}
+
+@keyframes slide {
+  0% {
+    translate: 0%;
+  }
+  100% {
+    translate: -100%;
+  }
+}
+
+/* Card Styles */
+.card_detail{
+  background: linear-gradient(45deg,#013569,#0f3864);
+  box-shadow: 2px 3px 60px rgba(2, 51, 99, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card{
+  background: linear-gradient(45deg,#1f73c75d,#99badd61);
+  animation: rt 10s linear infinite;
+}
+@keyframes rt {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Contact Page */
+.contact_section{
+ background: rgba(0, 0, 0, 0.144); 
+  backdrop-filter: blur(20px);          
+  -webkit-backdrop-filter: blur(20px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.message_form {
+  background: rgba(0, 0, 0, 0.132); /* semi-transparent */
+  backdrop-filter: blur(20px);           /* main effect */
+  -webkit-backdrop-filter: blur(20px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Mern Hover Effects */
+.mern:hover {
+  transform: scale(1.1);
+}
+.mern:hover + .txt {
+  display: block;
+  bottom: -30px;
+  color: #ffffffd6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.tilt-card{
+       background: linear-gradient(135deg, #1f295794 0%, #5c2fd697 50%, #ff6fb090 100%);
+}
