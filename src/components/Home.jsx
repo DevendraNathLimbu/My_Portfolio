@@ -11,6 +11,8 @@ import ScrollToTop from "./ScrollOnTop.jsx";
 import { Routes, Route } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
 const glowRef = useRef(null);
@@ -42,7 +44,7 @@ const ballRef = useRef(null);
 
     return (
       <>
-      <main className="grid grid-cols-1 min-h-[100vh] w-full">
+      <main className="grid grid-cols-1 place-items-center min-h-[100vh] w-full">
 
       {/* Glow effect */}
         <div
@@ -58,9 +60,10 @@ const ballRef = useRef(null);
         style={{ transform: "translate(-50%, -50%)" }}
       ></div>
 
-        <div className="relative w-[84vw] container min-h-[100vh] mx-1 md:mx-auto py-5 md:px-0 px-5">
+        <div className="relative w-[85vw] container min-h-[100vh] mx-1 md:mx-auto py-0 md:px-0 px-0 border-0 border-white">
               <Navbar/>
               <ScrollToTop />
+                 <ToastContainer position="top-right" autoClose={3000} theme="colored"/>
             <Routes>
               <Route path="/" element={<> <Hero /> <Body /> </>} />
               <Route path="/projects" element={<Projects />} />

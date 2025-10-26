@@ -7,6 +7,8 @@ import { FaArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const [formData, setFormData] = useState({name: "", message: ""});
@@ -24,21 +26,24 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const response = await axios.post("https://my-portfolio-8kd5.onrender.com/api/messages", formData);
+      const response = await axios.post("https://srizan.me/api/messages", formData);
       console.log("Response from server:", response);
       setStatus(response.data.message);
       setFormData({name: "", message: ""});
       setSureState(false);
+      if (!response.ok) throw new Error("Request failed");
+
+      toast.success("Data sent successfully!");
     }
     catch(error){
-      setStatus("Error sending message.");
+      toast.error("Error sending message.");
     }
   };
 
     return (
         <>
         {/* This is a section for my contact information */}
-        <div className="w-full mt-5">
+        <div className="w-full my-10 md:mt-6">
             <h2 className="w-full text-center text-3xl text-white md:text-5xl font-['headerFont']">Let's Make a Connection</h2>
             <span className="w-full block text-center text-[15px] md:text-xl font-['codeFont'] text-gray-400 font-semibold">You can check it out following social media accounts or contact details for any queries.</span>
             <div className="w-full mt-10 grid gap-0 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 rounded-xl overflow-hidden">
@@ -46,13 +51,13 @@ export default function Contact() {
                {/* This is a section for my contact details */}
                 <section className="contact_section bg-[#00000025] backdrop-blur-[20px] p-5 font-['codeFont'] md:border-r-2 border-gray-800">
                     <h2 className="text-white text-2xl md:text-3xl font-semibold text-center mb-5">Contact Details</h2>
-                    <ul className="w-full text-xl font-semibold flex flex-col gap-4 mt-3">
-                        <li><Link to="/contact" className="flex items-center text-[#eeefff] whitespace-break-spaces"><FaLinkedin className="text-4xl text-blue-600" /> Make a Connection</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#eeefff] whitespace-break-spaces"><FaGithub className="text-4xl text-gray-400" /> Let's Collaborate</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#eeefff] whitespace-break-spaces"><IoIosMail className="text-4xl text-gray-400" /> srijanlimbu355@gmail.com</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#eeefff] whitespace-break-spaces"><FaWhatsappSquare className="text-4xl text-green-400" /> 9745262729</Link></li>
+                    <ul className="w-full text-[1.2pc] md:text-xl font-semibold flex flex-col gap-4 mt-3">
+                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaLinkedin className="text-4xl text-blue-600" /> Make a Connection</Link></li>
+                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaGithub className="text-4xl text-gray-400" /> Let's Collaborate</Link></li>
+                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><IoIosMail className="text-4xl text-gray-400" /> srijanlimbu355@gmail.com</Link></li>
+                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaWhatsappSquare className="text-4xl text-green-400" /> 9745262729</Link></li>
                     </ul>
-                    <h3 className="w-full text-xl text-justify text-gray-400 font-semibold mt-10"><span className="font-serif">Note:</span> As being an introvert, my mind behaves null with strangers. Trying to overcome my mental issue. I confess the weaken point of me. Love to progress in silence, Yet a normal guy dreaming the future.</h3>
+                    <h3 className="w-full text--[1.2pc] md:text-xl text-justify text-gray-400 font-semibold mt-10"><span className="font-serif">Note:</span> As being an introvert, my mind behaves null with strangers. Trying to overcome my mental issue. I confess the weaken point of me. Love to progress in silence, Yet a normal guy dreaming the future.</h3>
                 </section>
 
                 {/* This is a section for my message form */}

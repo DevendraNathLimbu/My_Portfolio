@@ -21,7 +21,7 @@ const cardsData = [
 export default function Project(){
     return(
         <>
-        <div className="w-full min-h-[100vh] flex flex-col items-center">
+        <div className="w-full min-h-[100vh] flex flex-col items-center py-5">
         <h2 className="font-['codeFont'] text-white text-3xl md:text-5xl text-center mt-3">PROJECTS</h2>
             <div className="w-full grid gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 mt-5">
             <Card {...cardsData[0]} />

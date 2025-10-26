@@ -127,6 +127,7 @@ export default function TiltCard({ width = 360, height = 440, children }) {
         width,
         height,
         display: 'flex',
+        flexShrink: 2,
         alignItems: 'center',
         justifyContent: 'center',
         perspective: 1200,
