@@ -51,10 +51,10 @@ export default function Contact() {
                 <section className="contact_section bg-[#00000025] backdrop-blur-[20px] p-5 font-['codeFont'] md:border-r-2 border-gray-800">
                     <h2 className="text-white text-2xl md:text-3xl font-semibold text-center mb-5">Contact Details</h2>
                     <ul className="w-full text-[1.2pc] md:text-xl font-semibold flex flex-col gap-4 mt-3">
-                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaLinkedin className="text-4xl text-blue-600" /> Make a Connection</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaGithub className="text-4xl text-gray-400" /> Let's Collaborate</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><IoIosMail className="text-4xl text-gray-400" /> srijanlimbu355@gmail.com</Link></li>
-                        <li><Link to="/contact" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaWhatsappSquare className="text-4xl text-green-400" /> 9745262729</Link></li>
+                        <li><Link to="https://www.linkedin.com/in/srijan-limbu-65735533a" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaLinkedin className="text-4xl text-blue-600" /> Make a Connection</Link></li>
+                        <li><Link to="https://github.com/DevendraNathLimbu" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaGithub className="text-4xl text-gray-400" /> Let's Collaborate</Link></li>
+                        <li><Link to="mailto:srijanlimbu355@gmail.com" className="flex items-center text-[#abcfff] whitespace-break-spaces"><IoIosMail className="text-4xl text-gray-400" /> srijanlimbu355@gmail.com</Link></li>
+                        <li><Link to="https://wa.me/9745262729" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaWhatsappSquare className="text-4xl text-green-400" /> 9745262729</Link></li>
                     </ul>
                     <h3 className="w-full text--[1.2pc] md:text-xl text-justify text-gray-400 font-semibold mt-10"><span className="font-serif">Note:</span> As being an introvert, my mind behaves null with strangers. Trying to overcome my mental issue. I confess the weaken point of me. Love to progress in silence, Yet a normal guy dreaming the future.</h3>
                 </section>
