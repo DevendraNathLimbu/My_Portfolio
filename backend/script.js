@@ -8,7 +8,7 @@ import fs from "fs";
 import { fileURLToPath } from "url";
 dotenv.config();
 // Use mongoose to connect to MongoDB. Fall back to local MongoDB if URL not provided.
-const mongoURL = process.env.URL;
+const mongoURL = process.env.URL || 'mongodb://127.0.0.1:27017/Messages';
 
 const corsOptions = {
   origin: '*', // Adjust this to your frontend's origin
@@ -21,33 +21,25 @@ const __dirname = path.dirname(__filename);
 
 app.use(cors(corsOptions));
 
+import mongoose from 'mongoose';
+import Msg from './model/model.js';
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
 const distPath = path.join(__dirname, "../dist");
+app.use(express.static(distPath));
 
 if (!fs.existsSync(distPath)) {
   console.error("ERROR: dist folder not found at", distPath);
   process.exit(1);
 }
 
-app.use(express.static(distPath));
-
-import mongoose from 'mongoose';
-import Msg from './model/model.js';
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 // Connect mongoose to MongoDB (used by the Msg model)
 mongoose.connect(mongoURL)
   .then(() => console.log('✅ Connected to MongoDB via mongoose'))
   .catch(err => console.error('❌ MongoDB connection error (mongoose):', err));
-
-app.get( (req, res) => {
-  const indexPath = path.join(distPath, "index.html");
-  if (!fs.existsSync(indexPath)) {
-    console.error("ERROR: index.html not found in dist folder");
-    return res.status(500).send("index.html not found");
-  }
-  res.sendFile(indexPath);
-});
 
 app.get('/api/messages', async (req, res) => {
     try {
@@ -76,6 +68,15 @@ app.post('/api/messages', (req, res) => {
           console.error('Error saving message to DB:', err);
           return res.status(500).json({ error: err.message || 'Error saving message.' });
         });
+});
+
+// Catch-all: serve the client app for any non-API route (client-side routing)
+app.use((req, res) => {
+  const indexPath = path.join(distPath, "index.html");
+  if (!fs.existsSync(indexPath)) {
+    return res.status(500).send("index.html not found");
+  }
+  res.sendFile(indexPath);
 });
 
 app.listen(port,"0.0.0.0", () => {

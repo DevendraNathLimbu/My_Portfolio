@@ -31,12 +31,11 @@ export default function Contact() {
       setStatus(response.data.message);
       setFormData({name: "", message: ""});
       setSureState(false);
-      if (!response.ok) throw new Error("Request failed");
-
-      toast.success("Data sent successfully!");
+      toast.success("Message sent successfully!");
     }
     catch(error){
-      toast.error("Error sending message.");
+      const msg = "Something went wrong!";
+      toast.error(msg);
     }
   };
 
