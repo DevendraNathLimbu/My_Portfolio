@@ -11,7 +11,7 @@ export default function Footer() {
             <a href="https://github.com/DevendraNathLimbu" target="_blank" rel="noopener noreferrer">
                 <FaGithubSquare className="text-3xl" />
             </a>
-            <a href="https://www.linkedin.com/in/DevendraNathLimbu" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/srijan-limbu-65735533a" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-3xl" />
             </a>
             <a href="https://twitter.com/DevendraNathLimbu" target="_blank" rel="noopener noreferrer">

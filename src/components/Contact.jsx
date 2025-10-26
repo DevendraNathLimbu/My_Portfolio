@@ -56,13 +56,13 @@ export default function Contact() {
                         <li><Link to="mailto:srijanlimbu355@gmail.com" className="flex items-center text-[#abcfff] whitespace-break-spaces"><IoIosMail className="text-4xl text-gray-400" /> srijanlimbu355@gmail.com</Link></li>
                         <li><Link to="https://wa.me/9745262729" className="flex items-center text-[#abcfff] whitespace-break-spaces"><FaWhatsappSquare className="text-4xl text-green-400" /> 9745262729</Link></li>
                     </ul>
-                    <h3 className="w-full text--[1.2pc] md:text-xl text-justify text-gray-400 font-semibold mt-10"><span className="font-serif">Note:</span> As being an introvert, my mind behaves null with strangers. Trying to overcome my mental issue. I confess the weaken point of me. Love to progress in silence, Yet a normal guy dreaming the future.</h3>
+                    <h3 className="w-full text--[1.2pc] md:text-xl text-justify text-gray-400 font-semibold mt-10"><span className="font-serif">Note:</span> Being a coder is being a constant learner. Every mistake teaches, every experiment sparks something new. Not an expert, but someone stepping forward, chasing curiosity, turning failures into progress. Every line, every idea, is a small adventure, and that’s where the magic lives.</h3>
                 </section>
 
                 {/* This is a section for my message form */}
                 <section className="message_form bg-[#00000022] backdrop-blur-[20px] p-5 font-['codeFont']">
                     <h2 className="w-full text-center text-2xl text-white md:text-3xl font-semibold">Wanna Send Me a Message !</h2>
-                    <h5 className="w-full text-center text-white text-xl font-semibold">Here, you go <FaArrowDown className="inline-block" /></h5>
+                    <h5 className="w-full text-center text-white text-xl font-semibold md:mb-0 mb-3">Here, you go <FaArrowDown className="inline-block" /></h5>
 
 {/* This is a message form */}
 <form className="max-w-sm mx-auto" onSubmit={handleSubmit}>
