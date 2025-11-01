@@ -40,3 +40,9 @@ I enjoy working with the **MERN stack (MongoDB, Express, React, Node.js)** and e
    ```bash
    git clone https://github.com/DevendraNathLimbu/My_Portfolio.git
    cd My_Portfolio
+
+2. Install dependencies and start server
+  ```bash
+  cd backend
+  npm run build
+  npm start
