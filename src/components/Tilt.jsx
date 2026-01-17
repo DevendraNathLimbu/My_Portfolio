@@ -172,7 +172,7 @@ export default function TiltCard({ width = 360, height = 440, children }) {
         }}
       >
         {/* content layer (front) */}
-        <div style={{ padding: 20, display: 'flex', flexDirection: 'column', gap: 14, zIndex: 2 }}>
+        {/* <div style={{ padding: 20, display: 'flex', flexDirection: 'column', gap: 14, zIndex: 2 }}> */}
           {/* <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <div style={{
               width: 64,
@@ -213,14 +213,14 @@ export default function TiltCard({ width = 360, height = 440, children }) {
            🌹🌸🌼🌺💮🪷🌻🌷🪻🥀
           </div>
           <h3 className='text-2xl w-full text-center'>Flowers For You</h3> */}
-          <div style={{
+          {/* </div> */}
+
+        <div style={{
                       width,
                       height}}
                       className="image bg-[url('./assets/images/myself.png')] bg-cover bg-center"> 
                       
                       </div>
-          </div>
-
         {/* subtle decorative layer */}
         <div style={{
           position: 'absolute',
