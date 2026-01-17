@@ -8,7 +8,7 @@ import { IoMdContact } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { Link, NavLink } from "react-router-dom";
 
-import { use, useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 

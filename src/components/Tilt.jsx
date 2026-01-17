@@ -173,7 +173,7 @@ export default function TiltCard({ width = 360, height = 440, children }) {
       >
         {/* content layer (front) */}
         <div style={{ padding: 20, display: 'flex', flexDirection: 'column', gap: 14, zIndex: 2 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          {/* <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <div style={{
               width: 64,
               height: 64,
@@ -189,9 +189,9 @@ export default function TiltCard({ width = 360, height = 440, children }) {
               <div style={{ fontSize: 18, fontWeight: 700 }}>Web Developer</div>
               <div style={{ fontSize: 15, opacity: 0.9 }}>Every step is a new one</div>
             </div>
-          </div>
+          </div> */}
 
-          <div style={{
+          {/* <div style={{
             flex: 1,
             borderRadius: 12,
             background: 'rgba(255,255,255,0.06)',
@@ -207,13 +207,19 @@ export default function TiltCard({ width = 360, height = 440, children }) {
                 Life doesn’t crash because of one bad line — it compiles again when you keep improving the script.
               </div>
             )}
-          </div>
+          </div> */}
 
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', fontSize: 40, fontWeight: 500, padding: 15 }}>
+          {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', fontSize: 40, fontWeight: 500, padding: 15 }}>
            🌹🌸🌼🌺💮🪷🌻🌷🪻🥀
           </div>
-          <h3 className='text-2xl w-full text-center'>Flowers For You</h3>
-        </div>
+          <h3 className='text-2xl w-full text-center'>Flowers For You</h3> */}
+          <div style={{
+                      width,
+                      height}}
+                      className="image bg-[url('./assets/images/myself.png')] bg-cover bg-center"> 
+                      
+                      </div>
+          </div>
 
         {/* subtle decorative layer */}
         <div style={{
